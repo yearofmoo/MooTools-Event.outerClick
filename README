@@ -1,0 +1,11 @@
+This piece of code is by no means my own, however, I grew tired of having to download, copy and paste this library between my projects.
+
+Thus I'm hosting it on my Github account :)
+
+For those of you whom are not familiar with the event, it works like so.
+
+$('element').addEvent('outerClick',function() {
+  //The user has clicked (outside) of the given element
+});
+
+This event is useful for managing when an element is displaying itself, but the user wishes to blur it from his/her view.
