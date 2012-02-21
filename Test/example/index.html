@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>OuterClick Demo</title> 
+<style type="text/css">
+#bar {
+  width:300px;
+  height:200px;
+  border:2px solid black;
+  background:red;
+}
+</style>
+</head> 
+
+<body id="" class=""> 
+  <div id="wrapper">
+    <div id="bar"></div>
+  </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.4/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="../../Source/Event.outerClick.js"></script>
+<script type="text/javascript">
+window.addEvent('domready',function() {
+  $('bar').addEvent('outerClick',function() {
+    alert('outer click fired');
+  });
+});
+</script>
+</body>
+</html> 

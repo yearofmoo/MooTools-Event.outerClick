@@ -12,7 +12,7 @@
   Element.Events.outerClick = {
     onAdd: function(fn){
       if(!events) {
-        window.addEvent('click', check);
+        document.addEvent('click', check);
         events = [];
       }
       events.push({element: this, fn: fn});
@@ -22,7 +22,7 @@
         return item.element != this || item.fn != fn;
       }, this);
       if (!events.length) {
-        window.removeEvent('click', check);
+        document.removeEvent('click', check);
         events = null;
       }
     }
